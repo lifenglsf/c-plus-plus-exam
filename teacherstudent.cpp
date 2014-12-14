@@ -9,8 +9,10 @@
 #include <string>
 using namespace std;
 class person{
+protected:
+    string cno,name;
     public:
-        string cno,name;
+    
     person(string c,string n){
         cno = c;
         name = n;
@@ -49,8 +51,6 @@ public:
     }
 };
 int main(){
-    person p("aa","bbb");
-    p.display();
     
     student s("20110101","张三","四班",80.5);
     teacher t("20020101","王老师","教授","计算机系");
